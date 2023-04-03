@@ -32,7 +32,7 @@ public class AboutPage extends TestBase {
 
     }
 
-    //Actions ( Method to Validate Login Page Title)
+    //Actions ( Methods)
     public AboutPage AboutOptionClick(){
         AboutTitle.click();
         return new AboutPage();
@@ -47,12 +47,9 @@ public class AboutPage extends TestBase {
 
     public void VerifySearchBar(){
         SearchBarIcon.click();
-      //  SearchBar.sendKeys(kwd);
-      //  return new SearchPage();
     }
     public void VerifyTryItFree(){
         TryItFree.click();
-      //  driver.getCurrentUrl();
     }
 
 

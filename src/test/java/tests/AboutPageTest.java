@@ -1,5 +1,4 @@
 package tests;
-
 import base.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -26,7 +25,7 @@ public class AboutPageTest extends TestBase {
 
     }
 
-    @Test (priority = 1)//Click on About
+    @Test (priority = 1)
     public void VerifyClickOnAbout(){
         aboutPage = aboutPage.AboutOptionClick();
 
@@ -38,7 +37,7 @@ public class AboutPageTest extends TestBase {
         Assert.assertEquals(title , "Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing");
     }
 
-    @Test
+    @Test (priority = 3)
     public void VerifyTryItFreeButton(){
         aboutPage = aboutPage.AboutOptionClick();
         aboutPage.VerifyTryItFree();
@@ -46,13 +45,13 @@ public class AboutPageTest extends TestBase {
         System.out.println(driver.getCurrentUrl() + " is the enterprise URL");
         Assert.assertEquals(driver.getTitle(),prop.getProperty("Signup"));
     }
-    @Test (priority = 3)
+    @Test (priority = 4)
     public void VerifyScrollDownAboutPage(){
         aboutPage = aboutPage.AboutOptionClick();
         aboutPage.VerifyScrollDown();
     }
 
-    @Test (priority = 4)
+    @Test (priority = 5)
     public void VerifySearch(){
         aboutPage = aboutPage.AboutOptionClick();
         aboutPage.VerifySearchBar();

@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 public class HomePage extends TestBase {
 
     //Page Factory
-    //To Logout
     @FindBy(xpath = "//*[@id=\"logout_sidebar_link\"]")
     WebElement Logout;
 
@@ -35,13 +34,11 @@ public class HomePage extends TestBase {
 
     //Add Method
     public void VerifyItemAddedToCart(){
-        AddToCart.click(); //As it return "True or False" so we change void to boolean.
-       // return new AddedToCart();
+        AddToCart.click();
     }
     //Remove method
     public void VerifyItemRemovedFromCart() {
         Remove.click();
-        //return new RemovedFromCart();
     }
 
     public AboutPage VerifyOpenMenu(){

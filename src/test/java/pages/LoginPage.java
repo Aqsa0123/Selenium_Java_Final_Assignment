@@ -40,8 +40,7 @@ public class LoginPage extends TestBase {
     public HomePage login(String un, String pwd){
         username.sendKeys(un);
         password.sendKeys(pwd);
-        loginBtn.click(); //Its moving to homepage now.
-
+        loginBtn.click();
         return new HomePage();
     }
 
