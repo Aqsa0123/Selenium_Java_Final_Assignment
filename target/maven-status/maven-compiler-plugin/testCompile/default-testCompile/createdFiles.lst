@@ -1,0 +1,12 @@
+base\TestBase.class
+tests\LoginPageTest.class
+connectionString\BaseClass.class
+tests\AboutPageTest.class
+tests\HomePageTest.class
+pages\LoginPage.class
+connectionString\secondquestion.class
+tests\SauceLabTests.class
+pages\HomePage.class
+pages\AboutPage.class
+objects\SauceLabHomePage.class
+objects\SaucelabLoginPage.class
